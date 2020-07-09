@@ -10,9 +10,9 @@ import { Book } from '../models/book';
 })
 export class AppComponent {
   title = 'online-library-ui';
-  books$: Observable<any>;
+  books$: Observable<Book>;
 
   constructor(httpClient: HttpClient) {
-    this.books$ = httpClient.get('https://localhost:44378/books');
+    this.books$ = httpClient.get<Book>('https://localhost:44378/books');
   }
 }
