@@ -5,10 +5,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ListBooksComponent } from './books/components/list-books/list-books.component';
+import { CreateBookComponent } from './books/components/create-book/create-book.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListBooksComponent,
+    CreateBookComponent
   ],
   imports: [
     BrowserModule,
